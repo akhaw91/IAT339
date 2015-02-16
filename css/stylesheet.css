@@ -94,3 +94,10 @@ body{
 	font-size: 0.6rem;
 	font-weight: lighter;
 }
+
+#colours img{
+	margin-left: 1rem;
+	display: block;
+	height: auto;
+	max-width: 80%;
+}
