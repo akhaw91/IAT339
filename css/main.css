@@ -12,11 +12,12 @@ body {
 
 header {
 	background-color: #06364a;	
-	padding: 1em;
+	padding: 1em 10em;
 }
 
 nav {
 	background-color: black;
+	text-align: center;
 }
 
 nav a {
@@ -30,6 +31,31 @@ nav a {
 
 nav a:hover, nav a:active, nav a:focus {
 	background-color: #06364a;
+}
+
+nav .input-wrapper {
+	display: inline-block;
+	margin-left: 1em; 
+}
+
+.welcome img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.welcome h2 {
+	/* display: inline-block; */
+	padding: 0.5em;
+	color: #E2E2E2;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.welcome p {
+	/* display: inline-block; */
+	padding: 0.5em;
+	color: #E2E2E2;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
