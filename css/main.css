@@ -8,16 +8,25 @@ body {
 	background-color: #E2E2E2;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	margin: 0;
+
 }
 
 header {
 	background-color: #06364a;	
-	padding: 1em 10em;
+	padding: 2em 3.7em 1em;
+}
+
+.logo{
+
+
 }
 
 nav {
 	background-color: black;
-	text-align: center;
+	text-align: left;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2rem;
 }
 
 nav a {
@@ -25,17 +34,30 @@ nav a {
 	color:  #94c83d;
 	padding: 1em 1.25em;
 	text-decoration: none;
+	margin-left: 2em;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
 
+
+
 nav a:hover, nav a:active, nav a:focus {
-	background-color: rgba(150,150,150,0.7);
+	background-color: rgba(150,150,150,0.7)
+
 }
 
 nav .input-wrapper {
-	display: inline-block;
-	margin-left: 1em; 
+	display: inline-block; 
+	padding-right:0em;
+	margin-right: 1em;
+	margin-top:1em;
+	float:right;
+}
+
+
+
+input{
+
 }
 
 .welcome img.center {
