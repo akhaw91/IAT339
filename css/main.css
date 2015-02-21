@@ -17,11 +17,6 @@ header {
 	padding: 2em 3.7em 1em;
 }
 
-.logo{
-
-
-}
-
 nav {
 	background-color: black;
 	text-align: left;
@@ -39,11 +34,8 @@ nav a {
 	transition: background-color 0.5s;
 }
 
-
-
 nav a:hover, nav a:active, nav a:focus {
 	background-color: rgba(150,150,150,0.7)
-
 }
 
 nav .input-wrapper {
@@ -56,28 +48,51 @@ nav .input-wrapper {
 
 
 
-input{
-
-}
-
 .welcome img.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 100%;
+	top:12.20em;
+	position:absolute;
+
+}
+
+.welcome div.box{
+	background-color:#000000;
+	border:none;
+	position:absolute;
+	float:right;
+	width:40%;
+	padding: 5em;
+	right: 0;
+	bottom:6em;
+	opacity:0.8;
 }
 
 .welcome h2 {
 	/* display: inline-block; */
-	padding: 0.5em;
+	position:absolute;
+	float:right;
+	width:40%;
+	padding: 3em;
+	right: 2em;
+	bottom:5em;
+	font-size: 1.5em;
 	color: #E2E2E2;
-	background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .welcome p {
 	/* display: inline-block; */
-	padding: 0.5em;
+	position:absolute;
+	float:right;
+	width:40%;
+	padding: 3em;
+	right: 1.5em;
+	bottom:3em;
+	font-size: 1em;
 	color: #E2E2E2;
-	background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
