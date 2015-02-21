@@ -46,15 +46,13 @@ nav .input-wrapper {
 	float:right;
 }
 
-
-
 .welcome img.center {
-	display: block;
+	position:relative;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0;
 	max-width: 100%;
-	top:12.20em;
-	position:absolute;
+	top:0em;
 
 }
 
@@ -96,6 +94,37 @@ nav .input-wrapper {
 }
 
 footer {
-	background-color: #06364a;
-	padding: 1em;
+	position:relative;
+	background-color: #06364a;	
+	padding: 1em 3.7em 6em;
+	width:100%;
+	margin:none;
+	top:-0.3em;
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1rem;
+	text-align:left;
+}
+
+footer a.link{
+	text-align:left;
+	margin-left: 2em;
+	color:  #ffffff;
+	padding: 1em 1em;
+	text-decoration: none;
+	margin-left: 2em;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+footer div.contact{
+	color: #ffffff;
+	float: right;
+}
+footer img.map{
+	position:absolute;
+	margin-left:38%%;
+	width:40%;
+	height:13em;
+
+
 }
