@@ -62,9 +62,9 @@ nav .input-wrapper {
 	position:absolute;
 	float:right;
 	width:40%;
-	padding: 5em;
+	padding: 9em;
 	right: 0;
-	bottom:6em;
+	bottom:3.75em;
 	opacity:0.8;
 }
 
@@ -75,7 +75,7 @@ nav .input-wrapper {
 	width:40%;
 	padding: 3em;
 	right: 2em;
-	bottom:5em;
+	bottom:8.75em;
 	font-size: 1.5em;
 	color: #E2E2E2;
 
@@ -88,15 +88,34 @@ nav .input-wrapper {
 	width:40%;
 	padding: 3em;
 	right: 1.5em;
-	bottom:3em;
+	bottom:.5em;
 	font-size: 1em;
+	line-height: 1.5em;
 	color: #E2E2E2;
+}
+
+.browse-buttons {
+	background: black;
+}
+
+.browse-buttons a {
+	display: inline-block;
+	color:  #94c83d;
+	padding: 4em;
+	text-decoration: none;
+	margin-left: 7em;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.browse-buttons a:hover, nav a:active, nav a:focus {
+	background-color: rgba(150,150,150,0.7)
 }
 
 footer {
 	position:relative;
 	background-color: #06364a;	
-	padding: 1em 3.7em 6em;
+	padding: 1em 3.7em;
 	width:100%;
 	margin:none;
 	top:-0.3em;
@@ -116,13 +135,20 @@ footer a.link{
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
-footer div.contact{
+
+footer a:hover, nav a:active, nav a:focus {
+	color: #94c83d;
+}
+
+footer .contact{
 	color: #ffffff;
 	float: right;
 }
+
 footer img.map{
 	position:absolute;
-	margin-left:38%%;
+	margin-left:38%;
+	height: auto;
 	width:40%;
 	height:13em;
 
