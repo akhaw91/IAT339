@@ -1,0 +1,64 @@
+.welcome img {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: auto;
+}
+
+.welcome #message{
+	position: absolute;
+	background-color: rgba(0, 0, 0,0.8);
+	color: white;
+	padding: 0.5em 6em 1em 2em;
+	bottom: 0em;
+	left: 40em;
+	line-height: 1.25em;
+}
+
+.welcome h2{
+	font-size: 2.5rem;
+	font-weight: lighter;
+}
+
+.welcome p{
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+.welcome a{
+	text-decoration: none;
+	padding: 0.5rem;
+	background-color: black;
+	font-size: 0.8em;
+	font-weight: lighter;
+	color: #94c83d;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.welcome a:hover, nav a:active, nav a:focus {
+	background-color: rgba(150,150,150,0.7)
+}
+
+#browse-buttons{
+	width: 100%;
+	background-color: black;
+	text-align: left;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#browse-buttons a {
+	display: inline-block;
+	color:  #94c83d;
+	padding: 2em 7em;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+#browse-buttons a:hover, nav a:active, nav a:focus {
+	background-color: rgba(150,150,150,0.7)
+}

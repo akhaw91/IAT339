@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #E2E2E2;
+	background-color: black;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	margin: 0;
@@ -13,102 +13,53 @@ body {
 }
 
 header {
+	position: relative;
 	background-color: #06364a;	
-	padding: 2em 3.7em 1em;
+	padding: 0.5em 1em 0.5em 1em;
 }
 
-nav {
+header #logo{
+	margin-left: 3em;
+}
+
+header #cart{
+	position: absolute;
+	display: inline-block;
+	float: right;
+	padding-top: 0.25em;
+	padding-left: 45rem;
+	color: white;
+}
+
+header #phone{
+	position: absolute;
+	display: inline-block;
+	float: right;
+	padding-top: 1em;
+	padding-left: 45rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+#page-nav {
+	width: 100%;
 	background-color: black;
 	text-align: left;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1.2rem;
+	text-align: center;
 }
 
-nav a {
+#page-nav a {
 	display: inline-block;
 	color:  #94c83d;
-	padding: 1em 1.25em;
+	padding: 0.5em 4em;
 	text-decoration: none;
-	margin-left: 2em;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
 
-nav a:hover, nav a:active, nav a:focus {
-	background-color: rgba(150,150,150,0.7)
-}
-
-nav .input-wrapper {
-	display: inline-block; 
-	padding-right:0em;
-	margin-right: 1em;
-	margin-top:1em;
-	float:right;
-}
-
-.welcome img.center {
-	position:relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0;
-	max-width: 100%;
-	top:0em;
-
-}
-
-.welcome div.box{
-	background-color:#000000;
-	border:none;
-	position:absolute;
-	float:right;
-	width:40%;
-	padding: 9em;
-	right: 0;
-	bottom:3.75em;
-	opacity:0.8;
-}
-
-.welcome h2 {
-	/* display: inline-block; */
-	position:absolute;
-	float:right;
-	width:40%;
-	padding: 3em;
-	right: 2em;
-	bottom:8.75em;
-	font-size: 1.5em;
-	color: #E2E2E2;
-
-}
-
-.welcome p {
-	/* display: inline-block; */
-	position:absolute;
-	float:right;
-	width:40%;
-	padding: 3em;
-	right: 1.5em;
-	bottom:.5em;
-	font-size: 1em;
-	line-height: 1.5em;
-	color: #E2E2E2;
-}
-
-.browse-buttons {
-	background: black;
-}
-
-.browse-buttons a {
-	display: inline-block;
-	color:  #94c83d;
-	padding: 4em;
-	text-decoration: none;
-	margin-left: 7em;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.browse-buttons a:hover, nav a:active, nav a:focus {
+#page-nav a:hover, nav a:active, nav a:focus {
 	background-color: rgba(150,150,150,0.7)
 }
 
@@ -118,8 +69,6 @@ footer {
 	display:inline-block;
 	padding: 1em 3.7em;
 	width:100%;
-	margin:none;
-	top:-0.3em;
 	text-decoration: none;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1rem;
@@ -141,17 +90,10 @@ footer a:hover, nav a:active, nav a:focus {
 	color: #94c83d;
 }
 
-footer .contact{
-	color: #ffffff;
-	float: right;
-}
-
-footer img.map{
-	position:absolute;
-	margin-left:38%;
-	height: auto;
-	width:40%;
-	height:13em;
-
-
+footer p{
+	position: absolute;
+	top: 0em;
+	right: 2em;
+	color: white;
+	font-family: "Roboto";
 }
