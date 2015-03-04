@@ -9,6 +9,7 @@
 .welcome #message{
 	position: absolute;
 	background-color: rgba(0, 0, 0,0.8);
+	border-radius: 0.5em;
 	color: white;
 	padding: 0.5em 6em 1em 2em;
 	bottom: 0em;
@@ -29,8 +30,9 @@
 
 .welcome a{
 	text-decoration: none;
+	border-radius: 0.5em;
 	padding: 0.5rem;
-	background-color: black;
+	background-color: #06364a;
 	font-size: 0.8em;
 	font-weight: lighter;
 	color: #94c83d;

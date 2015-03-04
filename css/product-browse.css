@@ -31,6 +31,7 @@
 
 .content #divider{
 	display: block;
+	padding-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -42,29 +43,8 @@
 }
 
 .content #featured img{
-	width: 20%;
-	height: auto;
-	
-}
-
-#browse-buttons{
 	width: 100%;
-	background-color: black;
-	text-align: left;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.2rem;
-	text-align: center;
-}
+	height: auto;
+	padding-bottom: 1rem;
 
-#browse-buttons a {
-	display: inline-block;
-	color:  #94c83d;
-	padding: 2em 7em;
-	text-decoration: none;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-#browse-buttons a:hover, nav a:active, nav a:focus {
-	background-color: rgba(150,150,150,0.7)
 }

@@ -68,6 +68,11 @@
 
 }
 
+.col-3of10{
+	width: 17%;
+	margin-left: 9.5rem;
+}
+
 /*
 	Much like last week, we are clearing the floating items so
 	that our 'grid' structure can be stacked on others
