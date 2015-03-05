@@ -42,5 +42,46 @@
 }
 
 form{
-	padding-left: 8rem;
+	text-align: right;
+	max-width: 65%;
+}
+
+input{
+	padding: 0.25em;
+	margin-left: 1em;
+	font-size: 1em;
+}
+
+select{
+	padding: 0.25em;
+	margin-left: 1em;
+	font-size: 1em;
+}
+
+textarea{
+	padding: 0.25em;
+	margin-left: 1em;
+	font-size: 1em;
+	width: 50%;
+	height: 6em;
+}
+
+.input-wrapper{
+	margin: 1rem;
+}
+
+button{
+	font-size: 1em;
+	border-radius: 0.5em;
+	padding: 0.5rem;
+	margin-bottom: 1em;
+	background-color: #06364a;
+	border-color: #06364a;
+	color: #94c83d;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+button:hover {
+	background-color: rgba(150,150,150,0.7)
 }
