@@ -1,0 +1,71 @@
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+.content{
+	position: relative;
+	background-color: white;
+}
+
+#breadcrumbs{
+	color: #A1A1A1;
+	font-weight: lighter;
+	padding-top: 0.5rem;
+}
+
+.content h2{
+	color: #06364a;
+	font-size: 2rem;
+	padding-left: 8rem;
+}
+
+.content p{
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5rem;
+	text-align: justify;
+}
+
+.content #divider{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#contact h3{
+	color: #06364a;
+	padding-left: 8rem;
+}
+
+#contact img{
+	padding-left: 8rem;
+}
+
+#contact-text{
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+
+#contact-title h4{
+	display: inline;
+	color: #06364a;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding-left: 1rem;
+}
+
+#contact-title p{
+	font-size: 1rem;
+	margin: 0rem;
+	font-style: italic;
+	padding-left: 1rem;
+}
+
+#contact-info p{
+	margin: 0rem;
+	padding: 0rem 0rem 0rem 1rem;
+}
