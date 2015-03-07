@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #f2eeef;
+	background-color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	margin: 0;
@@ -42,7 +42,9 @@ header #logo{
 }
 
 footer {
-	position:relative;
+	position:absolute;
+	bottom: 0;
+	left: 0;
 	background-color: #06364a;	
 	display:inline-block;
 	width:100%;

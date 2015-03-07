@@ -18,12 +18,12 @@
 .content h2{
 	color: #06364a;
 	font-size: 2rem;
-	padding-left: 8rem;
+	padding-left: 10.2%;
 }
 
 .content p{
-	padding-left: 8rem;
-	padding-right: 8rem;
+	padding-left: 10.2%;
+	padding-right: 10.2%;
 	padding-bottom: 0.5rem;
 	line-height: 1.5rem;
 	text-align: justify;
@@ -38,11 +38,11 @@
 
 #contact h3{
 	color: #06364a;
-	padding-left: 8rem;
+	padding-left: 10.2%;
 }
 
 #contact img{
-	padding-left: 8rem;
+	padding-left: 10.2%;
 }
 
 #contact-text{

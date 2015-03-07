@@ -1,87 +1,40 @@
-
-/* 
-	This tutorial draws from "Don't Overthink Grids" available at
-	http://css-tricks.com/dont-overthink-it-grids/
-*/
-
-
-/*
-	With this selector, we are specifying that all objects use
-	the border-box model (not the content-box model)
-*/
-*, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-
-/*
-	Here we are using a 'fancy' css selector that is 
-	specifying if the class of an item starts with
-	'col-', then we should apply the styling listed
-*/
-[class^='col-'] {
-	float: left;
-	padding: 0; 
-	display:inline-block;
-}
-
-
-/*
-	Here we are defining our 50% wide column (for a 10 col grid)
-*/
-.col-5of10 {
-	width: 50%;
-}
-
-/*
-	Here using @media queries, we are specifying when the display
-	has a width less than 50em it should collapse the 5/10 columns 
-	into one stack (hence width: 100%)
-*/
-@media (max-width: 50em) {
-
-	.col-5of10 {
-		width: 100%;
-	}
-
-}
-
-
-/*
-	Here we are defining our 20% wide column (for 2 columns of a 10 col grid)
-*/
-.col-2of10 {
-	width: 20%;
-}
-
-/*
-	Using further @media queries, we specify that at a width of
-	less than 30em it should collapse the 2/10 columns into one stack
-*/
-@media (max-width: 30em) {
-
-	.col-2of10 {
-		width: 100%;
-	}
-
-}
-
-.col-3of10{
-	width: 17%;
-	margin-left: 9.5rem;
-}
-
-/*
-	Much like last week, we are clearing the floating items so
-	that our 'grid' structure can be stacked on others
-*/
-.grid:after {
-	content: "";
-	display: block;
+/*  SECTIONS  */
+.section {
 	clear: both;
+	padding: 0px;
+	margin: 0px;
 }
 
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
 
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
 
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
