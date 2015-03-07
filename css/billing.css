@@ -1,3 +1,37 @@
-fade{
-	color:gray;
+#breadcrumbs{
+	color: #A1A1A1;
+	font-weight: lighter;
+	padding-top: 0.5rem;
 }
+
+.content{
+	position: relative;
+	background-color: white;
+	display:inline-block;
+	padding-left:8rem;
+}
+.form{
+	text-align:center;
+	position: relative;
+	background-color: white;
+	display:inline-block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+	text-align: right;
+	max-width: 65%;
+}
+
+input{
+	padding: 0.25em;
+	margin-left: 1em;
+	font-size: 1em;
+}
+
+.input-wrapper{
+	margin: 1rem;
+}
+
+

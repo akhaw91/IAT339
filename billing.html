@@ -1,109 +1,244 @@
 <!doctype HTML>
-<html lag="en">
+<!doctype HTML>
+<html lang="en">
 
 	<head>
 		<meta charset="utf-8">
-		<title>AIP Home</title>
-		
+		<title>Billing and shipping address</title>
 		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/billing.css">
 	</head>
 
 	<body>
-		<header>
-				<img alt="Company Logo" src="images/logo.jpg" align='left'>
-				<img  alt="Company Name" src="images/header-name.png">
 
+		<header>
+			<div class="section group">
+				<div class="col span_1_of_3">
+					<a href="index.html">
+					<img alt="Company Logo" src="images/general/logo.jpg" id="logo">
+					<img alt="Company Name" src="images/general/header-name.png">
+				</a>
+				</div>
+				<div class="col span_2_of_3">
+					<nav id="page-nav">
+						<a href="index.html">Home</a>
+						<a href="products.html">Products</a>
+						<a href="repair.html" id="middle">Request Tool Repair</a>
+						<a href="about.html">About Us</a>
+						<a href="search.html">Search</a>
+					</nav>
+				</div>
+			</div>
 		</header>
 
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="products.html">Products</a>
-			<a href="services.html">Request Service</a>
-			<a href="about.html">About Us</a>
-			<a href="cart.html">Shopping Cart</a>
-			<div class="input-wrapper">
-				<input type="text" id="search" placeholder=" Search">
-				<input type="submit" value="Search" >
-			</div>
-		</nav>
+<!-- =====================================
+		vv PAGE CONTENT GOES HERE  vv
+	 ===================================== -->
+		<div class="span_3_of_3 content">
+	 		<div id="breadcrumbs">
+				<p>Home &gt; Cart &gt; Check out</p>
+	 		</div>
 
-		<div class="grid">
-			<div class="col-5of10">
-				<h2><fade>|</fade>Billing &amp; Shipping <fade>| Payment | Review Order | Recipt</fade></h2>
-			</div>
-		</div>
+	 		<h2>Billing</h2>
+	 		<p>Please fill out the following areas to ensure that your order is delivered to the right address</p>
 
-		<div class="grid">
-			<div class="col-5of10">
-				<h3> Contact information</h3>
-				<div class="input-wrapper">
-		          <label for="form-name">Name:</label>
-		          <input type="text" id="form-name" placeholder="Jane Doe">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">E-mail:</label>
-		          <input type="text" id="form-name" placeholder="E-mail">
-		        </div>
-		        <div class="input-wrapper">
-		        <h4> Address</h4>
-		          <label for="form-name">Street:</label>
-		          <input type="text" id="form-name" placeholder="Street">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">Postal Code:</label>
-		          <input type="text" id="form-name" placeholder="Postal Code">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">City:</label>
-		          <input type="text" id="form-name" placeholder="City">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">Province:</label>
-		          <input type="text" id="form-name" placeholder="Province">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">Country:</label>
-		          <input type="text" id="form-name" placeholder="Country">
-		        </div>
-		        <div class="input-wrapper">
-		          <label for="form-name">Telehone:</label>
-		          <input type="text" id="form-name" placeholder="Telephone">
-		        </div>
+	 		<img src="images/general/section-divider.png" alt="divider" id="divider">
 
-		        <form>	
+	 		<p>* = required field</p>
+
+	 	</div>
+
+	 	<div class="span_3_of_3 form">
+
+
+	 		<form method="post" action="#">
+	 			<div class="input-wrapper">
+	 				<label for="form-name">Name*:</label>
+         			<input type="text" id="form-name">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-company">Company:</label>
+         			<input type="text" id="form-company">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-phoneNum">Phone Number*:</label>
+         			<input type="text" id="form-phoneNum">
+        		</div>
+
+        		<div class="input-wrapper">
+	        		<label for="form-phoneNumExt">Ext:</label>
+	     			<input type="text" id="form-phoneNumExt" maxlength="4">
+	     		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-email">Email*:</label>
+         			<input type="text" id="form-email">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-confirmEmail">Confirm Email*:</label>
+         			<input type="text" id="form-confirmEmail">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-address">Address*:</label>
+         			<input type="text" id="form-address">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-city">City*:</label>
+         			<input type="text" id="form-city">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-province">Province*:</label>
+         			<select name="province">
+         				<option> - Province - </option>
+         				<option value="AB">Alberta</option>
+						<option value="BC">British Columbia</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="ON">Ontario</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="QC">Quebec</option>
+						<option value="SK">Saskatchewan</option>
+						<option value="NT">Northwest Territories</option>
+						<option value="NU">Nunavut</option>
+						<option value="YT">Yukon</option>
+					</select>
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-postalCode">Postal Code*:</label>
+         			<input type="text" id="form-postalCode" maxlength="6">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-product">Product Name*:</label>
+	 				<input type="text" id="form-product">
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-purchaseDate">Date of Purchase*:</label>
+         			<select name="DOPMonth">
+						<option> - Month - </option>
+						<option value="January">January</option>
+						<option value="Febuary">Febuary</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+
+					<select name="DOPDay">
+						<option> - Day - </option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+
+					<select name="DOPYear">
+						<option> - Year - </option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+						<option value="2013">2013</option>
+						<option value="2012">2012</option>
+						<option value="2011">2011</option>
+						<option value="2010">2010</option>
+						<option value="2009">2009</option>
+						<option value="2008">2008</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2005">2005</option>
+						<option value="other">Other</option>
+					</select>
+        		</div>
+
+        		<div class="input-wrapper">
+	 				<label for="form-description">Reason for Repair*:</label>
+         			<textarea id="form-description"></textarea>
+        		</div>
+
+        		<form>	
 				<input type="radio" name="agreement" value="I have Read and Agreed to the Company's Policies" checked>I have Read and Agreed to the Company's Policies
 				</form>
 
-				
-			</div>
-		</div>
+        		<div class="input-wrapper">
+        			<button type="submit" value="submit">Next</button>
+        		</div>
+        	</form>
+	 	</div>
 
-	
 
-
-
+<!-- =====================================
+		^^ PAGE CONTENT GOES HERE ^^
+	 ===================================== -->
 		<footer>
-					
-			<div>
-			<a class="link" href="index.html">Home</a>
-			</div>
-			<div>
-			<a class="link"href="products.html">Products</a>
-			</div>
-			<div>
-			<a class="link"href="services.html">Request Service</a>
-			</div>
-			<div>
-			<a class="link"href="about.html">About Us</a>
-			</div>
-			<div>
-			<a class="link"href="cart.html">Shopping Cart</a>
-			</div>
+			<div class="section group">
+				<div class="col span_2_of_3">
+					<a class="link" href="index.html">Home</a>
+					<a class="link"href="products.html">Products</a>
+					<a class="link"href="repair.html">Request Tool Repair</a>
+					<a class="link"href="about.html">About Us</a>
+					<a class="link"href="search.html">Search</a>
+				</div>
+				<div class="col span_1_of_3">
+					<div id="details-text">
+					<div id="details-title">
+						<h1>Alternative Inspection Products</h1>
+						<p>A division of BAACK Enterprises Inc.</p>
+					</div>
 
+					<div id="details-info">
+						<p>2808 Lupine Court, Coquitlam</p>
+						<p>British Columbia, CANADA</p>
+						<p>V3E 2S4</p>
+						<p>Phone: 1-877-838-3288</p>
+						<p>Email: info@aiptools.com</p>
+					</div>
+				</div>
+				</div>
 		</footer>
-	</body>
 
+	</body>
+</html>
