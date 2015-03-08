@@ -4,11 +4,11 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Billing and shipping address</title>
+		<title>Credit Card information</title>
 		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/billing.css">
+		<link rel="stylesheet" href="css/creditinfo.css">
 	</head>
 
 	<body>
@@ -36,42 +36,47 @@
 <!-- =====================================
 		vv PAGE CONTENT GOES HERE  vv
 	 ===================================== -->
-		<div class="span_3_of_3 content">
+
+	 	<div class="span_3_of_3 content float">
 	 		<div id="breadcrumbs">
 				<p>Home &gt; Cart &gt; Check out</p>
 	 		</div>
 
-	 		<h2>Billing</h2>
+	 		<h2>Payment information</h2>
 	 		<p>Please fill out the following areas to ensure that your order is delivered to the right address</p>
 
 	 		<img src="images/general/section-divider.png" alt="divider" id="divider">
 
-	 		<p>* = required field</p>
+	 		<p>* = Required fields</p>
 
-	 	</div>
+		 	<div class="span_2_of_3 form">
 
-	 	<div class="span_3_of_3 form">
+		 		<form>	
+					<input type="radio" name="agreement" value="I have Read and Agreed to the Company's Policies">Mastercard
+				</form>
+				<form>	
+					<input type="radio" name="agreement" value="I have Read and Agreed to the Company's Policies">Visa
+				</form>
 
-
-	 		<form method="post" action="#">
+				<form method="post" action="#">
 	 			<div class="input-wrapper">
-	 				<label for="form-name">Name*:</label>
+	 				<label for="form-name">Name on card*:</label>
          			<input type="text" id="form-name">
         		</div>
 
         		<div class="input-wrapper">
-	 				<label for="form-company">Company:</label>
-         			<input type="text" id="form-company">
+	 				<label for="form card number">Card number*:</label>
+         			<input type="text" id="form card number">
         		</div>
 
         		<div class="input-wrapper">
-	 				<label for="form-phoneNum">Phone Number*:</label>
-         			<input type="text" id="form-phoneNum">
+	 				<label for="form-date">Exp Date*:</label>
+         			<input type="text" id="form-date">
         		</div>
 
         		<div class="input-wrapper">
-	        		<label for="form-phoneNumExt">Ext:</label>
-	     			<input type="text" id="form-phoneNumExt" maxlength="4">
+	        		<label for="form-security">Security Code*</label>
+	     			<input type="text" id="form-security" maxlength="3">
 	     		</div>
 
         		<div class="input-wrapper">
@@ -117,11 +122,6 @@
         		<div class="input-wrapper">
 	 				<label for="form-postalCode">Postal Code*:</label>
          			<input type="text" id="form-postalCode" maxlength="6">
-        		</div>
-
-        		<div class="input-wrapper">
-	 				<label for="form-product">Product Name*:</label>
-	 				<input type="text" id="form-product">
         		</div>
 
         		<div class="input-wrapper">
@@ -195,20 +195,10 @@
         		</div>
 
         		<div class="input-wrapper">
-	 				<label for="form-description">Reason for Repair*:</label>
-         			<textarea id="form-description"></textarea>
+        			<button type="Submit" value="Next">Next</button>
         		</div>
-
-        		<form>	
-				<input type="radio" name="agreement" value="I have Read and Agreed to the Company's Policies">I have Read and Agreed to the Company's Policies
-				</form>
-
-        		<div class="input-wrapper">
-        			<button type="submit" value="submit">Next</button>
-        		</div>
-        	</form>
+			</div>
 	 	</div>
-
 
 <!-- =====================================
 		^^ PAGE CONTENT GOES HERE ^^

@@ -40,6 +40,18 @@ header #logo{
 	color: #94c83d;
 
 }
+.content{
+	position: relative;
+	display:inline-block;
+	background-color: white;
+	padding-left:8rem;
+}
+
+#breadcrumbs{
+	color: #A1A1A1;
+	font-weight: lighter;
+	padding-top: 0.5rem;
+}
 
 footer {
 	position:relative;
