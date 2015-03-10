@@ -9,6 +9,7 @@ $(document).ready( function() {
 		$("nav").hide();		
 		$("#logo").hide();
 		$("#message").hide();
+		$("#hide").hide();
 
 
 
