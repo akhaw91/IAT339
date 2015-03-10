@@ -99,3 +99,24 @@ footer a:hover, nav a:active, nav a:focus {
 	text-align: right;
 	margin: 0rem;
 }
+#logoWord{
+	padding-left:0;
+}
+.dd-hidden {
+	visibility: none;
+	position: absolute;
+	opacity: 0;
+}
+
+.dd-shown {
+	visibility: visible;
+	opacity: 1;
+}
+#navToggle {
+	display: none;
+	background-color:#f2eeef;
+	text-decoration: none;
+	padding: 1em 1.25em;
+}
+
+
