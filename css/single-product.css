@@ -18,26 +18,49 @@
 .content h2{
 	color: #06364a;
 	font-size: 2rem;
-	padding-left: 10.2%;
-	margin-top: 5%;
+	padding-left: 5%;
+	margin: 0;
+	margin-top: 3%;
+}
+
+.content h3{
+	color: #06364a;
+	font-size: 1.5rem;
+	padding-left: 5%;
+	margin: 0;
 }
 
 .content p{
-	padding-left: 10.2%;
-	padding-right: 10.2%;
-	padding-bottom: 0.5rem;
+	padding-left: 5%;
 	line-height: 1.5rem;
 	text-align: justify;
 }
 
-form{
-	margin-left: 10.2%;
-	margin-bottom: 0.5rem;
+#tool-info{
+	position: relative;
+	margin: 0;
 }
 
-input{
+.content img{
+	margin-left: 25%;
+	width: 75%;
+}
+
+#info{
+	position: absolute;
+	top: 0;
+}
+
+#divider{
+	margin-left: 5%;
+}
+
+form{
+	margin-left: 5%;
+}
+
+select{
 	padding: 0.25em;
-	margin-left: 1em;
 	font-size: 1em;
 }
 
@@ -58,12 +81,21 @@ button:hover {
 	color: #06364a;
 }
 
-.content a{
-	margin-left: 23%;
-	text-decoration: none;
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+#description{
+	margin-top: 2%;
+	padding-right: 7.5%;
 }
 
-.content a:hover{
-	text-decoration: underline;
+#long-divider{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 0.5em;
+}
+
+ul{
+	padding-left: 6%;
+	line-height: 1.5rem;
+	text-align: justify;
+}
