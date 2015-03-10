@@ -8,7 +8,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/billing.css">
+		<link rel="stylesheet" href="css/payment.css">
 	</head>
 
 	<body>
@@ -54,7 +54,7 @@
 	         	<div id="cart-headings">
 		         	<p>ADDRESSES</p>
 		         	<p>SHIPPING</p>
-		         	<p>PAYMENTS</p>
+		         	<p id="current">PAYMENTS</p>
 		         	<p>REVIEW</p>
 		         	<p>RECEIPT</p>
 		        </div>
@@ -62,77 +62,54 @@
 
 	 		<p>* = required field</p>
 
-	 		<form method="post" action="payment.html" id="billing-info">
-	 			<div class="input-wrapper">
-	 				<label for="form-name">Name*:</label>
-         			<input type="text" id="form-name">
+	 		<form method="post" action="Receipt.html" id="billing-info">
+        		<div class="input-wrapper">
+	 				<label for="form-cardNum">Credit Card Number:</label>
+         			<input type="text" id="form-cardNum">
         		</div>
 
         		<div class="input-wrapper">
-	 				<label for="form-company">Company:</label>
-         			<input type="text" id="form-company">
+         			<input type="radio" name="same" value="same" checked>Mastercard
+					<input type="radio" name="different" value="different">Visa
         		</div>
 
         		<div class="input-wrapper">
-	 				<label for="form-phoneNum">Phone Number*:</label>
-         			<input type="text" id="form-phoneNum">
-        		</div>
-
-        		<div class="input-wrapper">
-	        		<label for="form-phoneNumExt">Ext:</label>
+	        		<label for="form-cc">CVC:</label>
 	     			<input type="text" id="form-phoneNumExt" maxlength="4">
 	     		</div>
 
-        		<div class="input-wrapper">
-	 				<label for="form-email">Email*:</label>
-         			<input type="text" id="form-email">
-        		</div>
+	     		<div class="input-wrapper">
+	 				<label for="form-expire">Expiration Date:</label>
+         			<select name="DOPMonth">
+						<option> - Month - </option>
+						<option value="January">January</option>
+						<option value="Febuary">Febuary</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
 
-        		<div class="input-wrapper">
-	 				<label for="form-confirmEmail">Confirm Email*:</label>
-         			<input type="text" id="form-confirmEmail">
-        		</div>
-
-        		<div class="input-wrapper">
-	 				<label for="form-address">Address*:</label>
-         			<input type="text" id="form-address">
-        		</div>
-
-        		<div class="input-wrapper">
-	 				<label for="form-city">City*:</label>
-         			<input type="text" id="form-city">
-        		</div>
-
-        		<div class="input-wrapper">
-	 				<label for="form-province">Province*:</label>
-         			<select name="province">
-         				<option> - Province - </option>
-         				<option value="AB">Alberta</option>
-						<option value="BC">British Columbia</option>
-						<option value="MB">Manitoba</option>
-						<option value="NB">New Brunswick</option>
-						<option value="NL">Newfoundland and Labrador</option>
-						<option value="NS">Nova Scotia</option>
-						<option value="ON">Ontario</option>
-						<option value="PE">Prince Edward Island</option>
-						<option value="QC">Quebec</option>
-						<option value="SK">Saskatchewan</option>
-						<option value="NT">Northwest Territories</option>
-						<option value="NU">Nunavut</option>
-						<option value="YT">Yukon</option>
+					<select name="DOPYear">
+						<option> - Year - </option>
+						<option value="2019">2019</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="other">Other</option>
 					</select>
         		</div>
 
-        		<div class="input-wrapper">
-	 				<label for="form-postalCode">Postal Code*:</label>
-         			<input type="text" id="form-postalCode" maxlength="6">
-        		</div>
-
-        		<div class="input-wrapper">
-	 				<label for="form-postalCode">Shipping Address:</label>
-         			<input type="radio" name="same" value="same" checked>Ship to the above billing address
-         			<br>
-					<input type="radio" name="different" value="different">Ship to a different address
+	     		<div class="input-wrapper">
+	     			<label for="form-name">Name on card:</label>
+         			<input type="text" id="form-name">
         		</div>
 
         		<div class="input-wrapper">

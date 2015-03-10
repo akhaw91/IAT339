@@ -1,21 +1,121 @@
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
 .content{
-	padding-left:8rem;
+	position: relative;
+	background-color: white;
 }
-#breadcrumbs{
-	color: #A1A1A1;
-	font-weight: lighter;
-	padding-top: 0.5rem;
+
+.content h2{
+	color: #06364a;
+	font-size: 2rem;
+	text-align: center;
 }
-.content a{
-	text-decoration: none;
+
+.content p{
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5rem;
+	text-align: justify;
+}
+
+.content #divider{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.content h3{
+	color: #06364a;
+	padding-left: 8rem;
+}
+
+button{
+	font-size: 1em;
 	border-radius: 0.5em;
-	padding: 0.5%;
+	padding: 0.5rem;
+	margin-top: 6%;
+	margin-left: 40%;
 	background-color: #06364a;
-	font-size: 0.8em;
-	font-weight: lighter;
-	color: #94c83d;
-	position:relative;
-	display:inline-block;
+	border-color: #06364a;
+	color: white;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 
+button:hover {
+	background-color: rgba(150,150,150,0.7);
+	border-color: rgba(150,150,150,0.7);
+	color: #06364a;
+}
 
+#cart-headings{
+	background-color: #f2eeef;
+	margin-right: 4%;
+}
+
+#cart-headings p{
+	display: inline-block;
+	padding: 0.5% 8% 0.5% 8%;
+	margin: 0;
+}
+
+#cart-contents{
+	position: relative;
+	margin: 0;
+}
+
+#cart-contents img{
+	height: auto;
+	width: 40%;
+}
+
+#cart-contents form{
+	text-align: center;
+	max-width: 65%;
+}
+
+#cart-contents select{
+	padding: 0.25em;
+	margin-left: 1em;
+	font-size: 1em;
+}
+
+#cart-contents h4{
+	position: absolute;
+	padding-left: 0;
+	top: 0;
+	left: 45%;
+	color: #06364a;
+}
+
+#cart-contents-price{
+	margin: 0;
+}
+
+#cart-contents-price h3{
+	padding-left: 25%;
+}
+
+#cart-contents-total h3{
+	padding-left: 25%;
+}
+
+#totals{
+	text-align: right;
+	padding-right: 15%;
+}
+
+#totals p{
+	text-align: right;
+	padding-right: 0;
+}
+
+#totals button{
+	margin: 0;
+}

@@ -13,10 +13,23 @@ body{
 	background-color: white;
 }
 
-#breadcrumbs{
-	color: #A1A1A1;
-	font-weight: lighter;
-	padding-top: 0.5rem;
+button{
+	font-size: 1em;
+	border-radius: 0.5em;
+	padding: 0.5rem;
+	margin-top: 6%;
+	margin-left: 40%;
+	background-color: #06364a;
+	border-color: #06364a;
+	color: white;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+button:hover {
+	background-color: rgba(150,150,150,0.7);
+	border-color: rgba(150,150,150,0.7);
+	color: #06364a;
 }
 
 .content h2{
@@ -50,6 +63,10 @@ form{
 	max-width: 65%;
 }
 
+#billing-info{
+	max-width: 50%;
+}
+
 input{
 	padding: 0.25em;
 	margin-left: 1em;
@@ -62,14 +79,6 @@ select{
 	font-size: 1em;
 }
 
-textarea{
-	padding: 0.25em;
-	margin-left: 1em;
-	font-size: 1em;
-	width: 50%;
-	height: 6em;
-}
-
 .input-wrapper{
 	margin: 1rem;
 }
@@ -78,6 +87,7 @@ button{
 	font-size: 1em;
 	border-radius: 0.5em;
 	padding: 0.5rem;
+	margin-top: 6%;
 	margin-left: 40%;
 	background-color: #06364a;
 	border-color: #06364a;
@@ -90,4 +100,47 @@ button:hover {
 	background-color: rgba(150,150,150,0.7);
 	border-color: rgba(150,150,150,0.7);
 	color: #06364a;
+}
+
+#cart-headings{
+	background-color: #f2eeef;
+	margin-right: 4%;
+}
+
+#cart-headings p{
+	display: inline-block;
+	padding: 0.5% 6.5% 0.5% 6.5%;
+	margin: 0;
+}
+
+#cart-headings #current{
+	background-color: #06364a;
+	color: white;
+}
+
+#totals{
+	position: absolute;
+	text-align: right;
+	right: 15%;
+	top: 40%;
+	border-color: #06364a;
+	border-width: 0.25rem;
+	border-style: solid;
+}
+
+#totals p{
+	text-align: right;
+	padding-right: 7%;
+}
+
+#totals h2{
+	text-align: center;
+	padding-left: 0%;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+#totals h3{
+	text-align: right;
+	padding-right: 7%;
 }

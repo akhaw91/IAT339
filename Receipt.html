@@ -1,16 +1,13 @@
 <!doctype HTML>
-<!doctype HTML>
 <html lang="en">
 
 	<head>
 		<meta charset="utf-8">
-		<title>Credit Card information</title>
+		<title>AIP Home</title>
 		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/receipt.css">
-		<link rel="stylesheet" href="css/main-noScroll.css">
-		
-
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/cart.css">
 	</head>
 
 	<body>
@@ -41,28 +38,71 @@
 		vv PAGE CONTENT GOES HERE  vv
 	 ===================================== -->
 
-	 	<div class="span_3_of_3 content">
-	 		<div id="breadcrumbs">
-				<p>Home &gt; Cart &gt; Check out</p>
-	 		</div>
+		 <div class="content group">
+	        <div class="col span_3_of_3">
+	        	<h2>Receipt</h2>
+	        </div>
 
-	 		<h2>Payment information</h2>
-	 		<p class="pad">Thank you for your purchase. Your package will arrive within 10- 12 business days. Please direct any questions you have to our e-mail address listed below or continue shopping by looking at other links</p>
+	        <img src="images/general/section-divider.png" alt="divider" id="divider">
 
-	 		<a href="products.html">See more products</a>
+	        <p>Thank you for your purchase. Please allow 2-3 days for processing. You should receive a confirmation email with details on when you should expect to receive your purchase.</p>
 
+	         <div class="col span_4_of_4">
+	         	<div id="cart-headings">
+		         	<p>Quantity:</p>
+		         	<p>Item Description:</p>
+		         	<p>Price:</p>
+		         	<p>Total:</p>
+		        </div>
+	         </div>
 
-	 	</div>
+ 			<div class="col span_1_of_4">
+	        	<div id="cart-contents">
+		        	<form method="post" action="cart.html">
+				 			<div class="input-wrapper">
+	         					<p>1</p>
+        					</div>
+			        	</form>
+		        </div>
+		    </div>
+		    <div class="col span_1_of_4">
+	        	<div id="cart-contents">
+		        	<img src="images/products/browse-products/featured1.png" alt="featured">
+		        	<h4>GE Protimeter BLD5360</h4>
+		        </div>
+		    </div>
+		    <div class="col span_1_of_4">
+	        	<div id="cart-contents-price">
+		        	<h3>$495.95</h3>
+		        </div>
+		    </div>
+		    <div class="col span_1_of_4">
+	        	<div id="cart-contents-total">
+		        	<h3>$495.95</h3>
+		        </div>
+		    </div>
 
+		    <img src="images/general/section-divider.png" alt="divider" id="divider">
 
+		    <div class="col span_4_of_4">
+		    	<div id="totals">
+		    		<p>subtotal: $495.95</p>
+		    		<p>shipping: $10.00</p>
+	    			<p>tax: $50.50</p>
+	    			<h3>Total: $556.45</h3>
+	    			<form method="post" action="index.html">
+						<button id="checkout" type="submit" value="submit">Return to homepage</button>
+	        		</form>
+		    	</div>
+		    </div>
 
-
+	 	 </div>
 
 <!-- =====================================
 		^^ PAGE CONTENT GOES HERE ^^
 	 ===================================== -->
 		<footer>
-			<div class="section group footer">
+			<div class="section group">
 				<div class="col span_2_of_3">
 					<a class="link" href="index.html">Home</a>
 					<a class="link"href="products.html">Products</a>
