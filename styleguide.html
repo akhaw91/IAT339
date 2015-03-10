@@ -1,197 +1,194 @@
 <!doctype HTML>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-	<title>Style Guide</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Styleguide</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/styleguide.css">
+	</head>
 
-<body>
-	<section id="header">
-	<h1>Alternative Inspection Products - Style Guide</h1>
-	<h2>Andrew Khaw (301111736)</h2>
-	</section>
+	<body>
 
-	<!--Section outlining Button details-->
-	<section id="buttons">
-		<div class="section-header">
-			<h3>Button Elements</h3>
-		</div>
+		<header>
+			<div class="section group">
+				<div class="col span_1_of_3">
+					<a href="index.html">
+					<img alt="Company Logo" src="images/general/logo.jpg" id="logo">
+					<img alt="Company Name" src="images/general/header-name.png">
+				</a>
+				</div>
+				<div class="col span_2_of_3">
+					<nav id="page-nav">
+						<a href="#text">Text Elements</a>
+						<a href="#forms">Forms</a>
+						<a href="#buttons" id="middle">Buttons</a>
+						<a href="#images">Imagery</a>
+						<a href="#structure">Structure and Layouts</a>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'#button a'</p>
-		</div>
+<!-- =====================================
+		vv PAGE CONTENT GOES HERE  vv
+	 ===================================== -->
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-		</div>
+	 	<div class="content group">
+	        <div class="col span_3_of_3">
+	        	<h2>Company Website Styleguide</h2>
+	        </div>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<a href="#" class="button">Default Button</a>
-	</section>
+	        <img src="images/general/section-divider.png" alt="divider" id="divider">
 
-	<!--Section outlining Form details-->
-	<section id="forms">
-		<div class="section-header">
-			<h3>Form Elements</h3>
-		</div>
+	        <div class="col span_3_of_3">
+	        	<h2 id="text">Text Elements</h2>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'#form'</p>
-		</div>
+	        	<h4>Page Headers</h4>
+	        	<p id="type">CSS Selector</p>
+	        	<p>.content h2</p>
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;label for="form-firstName"&gt;First Name:&lt;/label&gt; &lt;input type="text" id="form-name"&gt;</code>
-		</div>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;div class=&quot;content group&quot;&gt;
+   	&lt;div class=&quot;col span_3_of_3&quot;&gt;
+   		&lt;h2&gt;Receipt&lt;/h2&gt;
+   	&lt;div&gt;
+&lt;div&gt;</code></pre>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<label>First Name:</label> <input type="text" id="form-firstNameInput"><br>
-		<label>Last Name:</label> <input type="text" id="form-lastNameInput">
-	</section>
+				<p id="type">Rendered Element</p>
+	        	<h3>Receipt</h3>
 
-	<!--Section outlining Image details-->
-	<section id="images">
-		<div class="section-header">
-			<h3>Image Elements</h3>
-		</div>
+	        	<h4>Section Header</h4>
+	        	<p id="type">CSS Selector</p>
+	        	<p>.content h3</p>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'img'</p>
-		</div>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;h3&gt;Repair Request Form&lt;/h3&gt;</code></pre>
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;img src="images/woodMeter.jpg" alt="Moisture Meter looking for moisture in wood"&gt;</code>
-		</div>
+				<p id="type">Rendered Element</p>
+	        	<h4>Repair Request Form</h4>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<img src="images/Home_Inspection.jpg" alt="How to inspect your own home">
-		<img src="images/woodMeter.jpg" alt="Moisture meter looking for moisture in wood">
-		<img src="images/homeInspection.jpg" alt="A home inspector">
-	</section>
+	        	<h4>Section Text</h4>
+	        	<p id="type">CSS Selector</p>
+	        	<p>.content p</p>
 
-	<!--Section outlining Text details-->
-	<section id="texts">
-		<div class="section-header">
-			<h3>Text Elements</h3>
-		</div>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;p&gt;RLorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
 
-		<!--Page Headers-->
-		<div class="page-headers">
-			<h5>Page Headers</h5>
-		</div>
+				<p id="type">Rendered Element</p>
+	        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum ultrices risus, nec egestas metus blandit vitae. Nunc ut tempus nisl. Suspendisse id neque in velit viverra porta in ut enim. Mauris elementum molestie arcu sed porttitor. Suspendisse efficitur pretium eleifend. Integer elit elit, fringilla ac egestas at, congue ac lacus. In volutpat nisi sed risus sodales pellentesque. Integer accumsan efficitur rhoncus.</p>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'#page-header'</p>
-		</div>
+	        	<h4>Breadcrumbs</h4>
+	        	<p id="type">CSS Selector</p>
+	        	<p>#breadcrumbs</p>
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;h1&gt;Products&lt;/h1&gt;</code>
-		</div>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;div class=&quot;breadcrumbs&quot;&gt;
+	&lt;p&gt;Home &gt; Request Tool Repair&lt;/p&gt;
+&lt;div&gt;</code></pre>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<div class="page-headers-sample">
-			<h2>Products</h2>
-			<h2>Service</h2>
-			<h2>About Us</h2>
-		</div>
+				<p id="type">Rendered Element</p>
+	        	<div id="breadcrumbs">
+					<p>Home &gt; Request Tool Repair</p>
+	 			</div>
+	        
+	 			<img src="images/general/section-divider.png" alt="divider" id="divider">
 
-		<!--Section Headers-->
-		<div class="page-headers">
-			<h5>Section Headers</h5>
-		</div>
+	 			<h2 id="forms">Forms</h2>
+	 			<p id="type">CSS Selector</p>
+	        	<p>form</p>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'#section-header'</p>
-		</div>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;form method=&quot;post&quot; action=&quot;#&quot;&gt;
+	&lt;div class=&quot;input&ndash;wrapper&quot;&gt;
+		&lt;label&gt;Name&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/form&gt;</code></pre>
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;h2&gt;Welcome to AIP&lt;/h2&gt;</code>
-		</div>
+				<p id="type">Rendered Element</p>
+	        	<form method="post" action="#">
+		 			<div class="input-wrapper">
+		 				<label for="form-name">Name*:</label>
+	         			<input type="text" id="form-name">
+	        		</div>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<div class="section-headers-sample">
-			<h2>Welcome to AIP</h2>
-			<h2>Featured Products</h2>
-			<h2>Sort by Category</h2>
-		</div>
+	        		<div class="input-wrapper">
+		 				<label for="form-company">Company:</label>
+	         			<input type="text" id="form-company">
+	        		</div>
 
-		<!--Section Text-->
-		<div class="page-headers">
-			<h5>Section Text</h5>
-		</div>
+	        		<div class="input-wrapper">
+		 				<label for="form-phoneNum">Phone Number*:</label>
+	         			<input type="text" id="form-phoneNum">
+	        		</div>
+	        	</form>
 
-		<div class="section-content-header">
-			<h4>CSS Selector</h4>
-		</div>
-		<div class="section-content">
-			<p>'#section-text'</p>
-		</div>
+	        	<img src="images/general/section-divider.png" alt="divider" id="divider">
 
-		<div class="section-content-header">
-			<h4>Sample Code</h4>
-		</div>
-		<div class="section-content">
-			<code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis libero a tortor varius condimentum. Aenean sed ex nisi. Curabitur quam neque, congue sed cursus ut, tempor eget lectus. In hendrerit, sem vel tristique efficitur, orci magna sodales sem, nec ultricies ex nibh vehicula orci.&lt;/p&gt;</code>
-		</div>
+	        	<h2 id="buttons">Buttons</h2>
+	        	<p id="type">CSS Selector</p>
+	        	<p>button</p>
 
-		<div class="section-content-header">
-			<h4>Rendered Element</h4>
-		</div>
-		<div class="section-text-sample">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis libero a tortor varius condimentum. Aenean sed ex nisi. Curabitur quam neque, congue sed cursus ut, tempor eget lectus. In hendrerit, sem vel tristique efficitur, orci magna sodales sem, nec ultricies ex nibh vehicula orci.</h2>
-		</div>
-	</section>
+	        	<p id="type">Sample Code</p>
+	        		<pre><code>&lt;button type=&quot;submit&quot; value=&quot;submit&quot;&gt;Submit&lt;/button&gt;</code></pre>
 
-	<section id="colours">
-		<div class="section-header">
-			<h3>Colour Palette</h3>
-		</div>
+        		<p id="type">Rendered Element</p>
+        		<div class="input-wrapper">
+        			<button type="submit" value="submit">Submit Form</button>
+        		</div>
 
-		<img src="images/colours_pallette.png" alt="Colour Pallette">
-	</section>
+        		<img src="images/general/section-divider.png" alt="divider" id="divider">
 
-	
-</body>
+	        	<h2 id="images">Imagery</h2>
+	        	<img alt="Industrial NDT and Home Inspection tools" src="images/home/inspection_image.png">
+	        	<img src="images/products/browse-products/featured1.png" alt="featured" id="prodimg">
+	        	<img src="images/products/browse-products/featured2.png" alt="featured">
+
+	        	<img src="images/general/section-divider.png" alt="divider" id="divider">
+
+	        	<h2 id="structure">Structure and Layouts</h2>
+	        	<p>We made use of various different grids to help position elements on different pages. We used a combination of grids ranging from 2-5 columns.</p>
+
+	        	<p>For example, for our homepage, we used the following layout:</p>
+
+	        	<img src="images/styleguide/layout-home.png" alt="sample layout">
+	        </div>
+
+	    </div>
+
+<!-- =====================================
+		^^ PAGE CONTENT GOES HERE ^^
+	 ===================================== -->
+		<footer>
+			<div class="section group">
+				<div class="col span_2_of_3">
+					<a class="link" href="index.html">Home</a>
+					<a class="link"href="products.html">Products</a>
+					<a class="link"href="repair.html">Request Tool Repair</a>
+					<a class="link"href="about.html">About Us</a>
+					<a class="link"href="search.html">Search</a>
+				</div>
+				<div class="col span_1_of_3">
+					<div id="details-text">
+					<div id="details-title">
+						<h1>Alternative Inspection Products</h1>
+						<p>A division of BAACK Enterprises Inc.</p>
+					</div>
+
+					<div id="details-info">
+						<p>2808 Lupine Court, Coquitlam</p>
+						<p>British Columbia, CANADA</p>
+						<p>V3E 2S4</p>
+						<p>Phone: 1-877-838-3288</p>
+						<p>Email: info@aiptools.com</p>
+					</div>
+				</div>
+				<div id="author">
+					<p>By: Andrew Khaw and Theo Wong</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
 </html>

@@ -95,3 +95,13 @@ footer a:hover, nav a:active, nav a:focus {
 	text-align: right;
 	margin: 0rem;
 }
+
+#author{
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+}
+
+#author p{
+	color: white;
+}
