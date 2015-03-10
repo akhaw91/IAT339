@@ -14,7 +14,7 @@ body {
 
 header {
 	position: relative;
-	background-color: #f2eeef;	
+	background-color: #f2eeef;
 }
 
 header #logo{
@@ -39,12 +39,6 @@ header #logo{
 	
 	color: #94c83d;
 
-}
-.content{
-	position: relative;
-	display:inline-block;
-	background-color: white;
-	padding-left:8rem;
 }
 
 #breadcrumbs{

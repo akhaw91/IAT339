@@ -18,12 +18,12 @@
 .content h2{
 	color: #06364a;
 	font-size: 2rem;
-	padding-left: 8rem;
+	padding-left: 10.2%;
 }
 
 .content p{
-	padding-left: 8rem;
-	padding-right: 8rem;
+	padding-left: 10.2%;
+	padding-right: 10.2%;
 	padding-bottom: 0.5rem;
 	line-height: 1.5rem;
 	text-align: justify;
@@ -31,7 +31,6 @@
 
 .content #divider{
 	display: block;
-	padding-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -39,12 +38,110 @@
 
 .content h3{
 	color: #06364a;
-	padding-left: 8rem;
+	padding-left: 10.2%;
+}
+
+.content figure{
+	position: relative;
+	margin: 0;
+}
+
+.content figure h4{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #06364a;
+}
+
+.content figure p{
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9rem;
+	padding: 0;
+	margin: 0;
+}
+
+.content figure h5{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 1rem;
+	margin-bottom: 1em;
+	color: #06364a;
+}
+
+.content figure a{
+	text-decoration: none;
+	text-align: center;
+	padding: 1.5%;
+	background-color: #06364a;
+	font-weight: lighter;
+	color: #94c83d;
+	border-radius: 0.5em;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.content figure a:hover, figure a:active, figure a:focus {
+	background-color: rgba(150,150,150,0.7)
+}
+
+.content figure a:first-of-type{
+	margin-left: 34.5%;
 }
 
 .content #featured img{
-	width: 100%;
 	height: auto;
-	padding-bottom: 1rem;
+	width: 50%;
+	margin-left: 25%;
+}
 
+.content #category figure{
+	position: relative;
+}
+
+.content #category img{
+	height: auto;
+	max-width: 80%;
+	margin-left: 15%;
+	border-radius: 1em;
+
+}
+
+#overlay{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	top: 0%;
+	left: 15%;
+	padding: 19% 26%;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 1em;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+#overlay:hover{
+	background-color: rgba(150,150,150,0.7);
+	color: #06364a;
+}
+
+#overlay2{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	top: 0%;
+	left: 15%;
+	padding: 19% 27.5%;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 1em;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+#overlay2:hover{
+	background-color: rgba(150,150,150,0.7);
+	color: #06364a;
 }

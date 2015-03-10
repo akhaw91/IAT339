@@ -61,31 +61,46 @@ figure{
 	margin: 0;
 }
 
-#browse-buttons{
-	width: 100%;
-	background-color: #f2eeef;
-	text-align: center;
-	font-size: 1rem;
+#browse-buttons figure{
+	position: relative;
 }
 
-#browse-buttons img {
-	max-height: auto;
+#category img{
+	height: auto;
 	max-width: 100%;
-}
 
-#browse-buttons a{
-	text-decoration: none;
 }
 
 #overlay{
+	position: absolute;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
-	padding: 3%;
+	top: -9%;
+	padding: 19.5% 38%;
+	text-align: center;
+	font-size: 1rem;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
 
 #overlay:hover{
+	background-color: rgba(150,150,150,0.7);
+	color: #06364a;
+}
+
+#overlay2{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	top: -9%;
+	padding: 22% 38%;
+	text-align: center;
+	font-size: 1rem;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+#overlay2:hover{
 	background-color: rgba(150,150,150,0.7);
 	color: #06364a;
 }
