@@ -104,7 +104,9 @@ button:hover {
 
 #cart-headings{
 	background-color: #f2eeef;
-	margin-right: 4%;
+	text-align:center;
+	padding:0;
+
 }
 
 #cart-headings p{
