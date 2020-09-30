@@ -96,6 +96,7 @@
 .content #featured img{
 	height: auto;
 	width: 50%;
+	cursor: pointer;
 	margin-left: 25%;
 }
 
